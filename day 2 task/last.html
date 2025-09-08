@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            CSS Page
+        </title>
+
+        <style>
+/* General Style */
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to right , #ece9e6 , #ffffff);
+            }
+
+            header {
+                background-color: #007BFF;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            /* Nav Bar */
+            nav {
+                background-color: #333;
+                display: flex;
+                justify-content: center;
+
+            }
+
+
+            nav a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: non;
+                display: block;
+            }
+
+            nav a:hover {
+                background-color: #575757;
+            }
+
+            /* card layout using flexbox */
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+
+            .card {
+                background-color: white;
+                width: 250px;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                transition: transform 0.3s;
+            }
+
+            .card:hover{
+                transform: scale(1.05);
+            }
+
+
+            .card img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+
+            .btn {
+                display: inline-block;
+                background-color: #007BFF;
+                color: white;
+                padding: 10px 10px;
+                margin-top: 10px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+
+            }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+            /* List */
+
+            ul {
+                text-align: left;
+                margin-top: 10px;
+
+            }
+
+            ul li {
+                margin-bottom: 5px;
+            }
+
+            /* table */
+            table {
+                width: 80%;
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+
+            th , td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #007BFF;
+                color: white;
+            }
+
+            tr:hover {
+                background-color: #f1f1f1;
+
+            }
+
+            /* Footer */
+            footer {
+                background-color: #333;
+                color: wheat;
+                text-align: center;
+                padding: 15px;
+                margin-top: 20px;
+            }
+
+
+       
+        </style>
+    </head>
+
+    <body>
+
+        <header> 
+            <h1> Welcome to my page</h1>
+            <p> This is CSS UI</p>    
+        
+        </header>
+
+        <nav>
+            <a href="#"> Home</a>
+            <a href="#"> About</a>
+            <a href="#"> Contact</a>
+            
+        </nav>
+
+
+        <div class="container">
+            <div class="card">
+                <img src="man.png" alt="Man">
+                <h2>Card Title</h2>
+                <p> This is an Example</p>
+                <ul>
+                    <li>Nice Border</li>
+                    <li> Rounded Corners</li>
+                    <li> Shadow Effect</li>
+                </ul>
+
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+
+
+            <div class="card">
+                <img src="man.png" alt="Man">
+                <h2>Card Title Number 2</h2>
+                <p> Hover To see the scaling effect!</p>
+                <a href="#" class="btn">Learn More</a>
+
+            </div>
+
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+
+            </tr>
+
+            <tr>
+                <td>Ali</td>
+                <td>22</td>
+                <td>Cairo</td>
+            </tr>
+
+            <tr>
+                <td>Ahmed</td>
+                <td>22</td>
+                <td>Alex</td>
+            </tr>
+
+            
+            <tr>
+                <td>Eslam</td>
+                <td>22</td>
+                <td>Sinai</td>
+            </tr>
+
+            
+        </table>
+
+
+        <footer>
+            <p> Made With Love This Website</p>
+        </footer>
+
+       
+
+    </body>
+
+    
+</html>
