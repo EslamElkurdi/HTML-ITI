@@ -1,223 +1,206 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Practice Project</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
 
-        table , th , td {
-            border: 1px solid black;
-        }
+    header {
+      background: #0e0b28;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
 
-         td {
-            
-            padding-top: 10px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 40px;
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
 
-        th:nth-child(even) , td:nth-child(even) {
-            background-color: aquamarine;
+    section {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-        }
-        
-    </style>
+    h2 {
+      color: #0e0b28;
+    }
 
-    <link rel="stylesheet" href="styles.css">
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
 
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
 
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+      background: #fafafa;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    button {
+      background: #0e0b28;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1c1654;
+    }
+  </style>
+  <script>
+    function showMessage() {
+      alert("Hello! You clicked the button 🚀");
+    }
+  </script>
 </head>
-<body style="background-color: gainsboro;">
-<!-- write any comment -->
- <!-- <h1 style="border: 2px solid darkgoldenrod;"> Welcome </h1>
-
-
- <h1 style="border: 2px solid darkgrey;"> Welcome </h1>
-
-
- <h1 style="background-color: rgb(255, 70, 99);"> This is RGB </h1> -->
-
- <!-- <h1 style="color: aqua;"> Hello</h1>
-
-
- <a href="https://www.google.com" > GOOGLE </a>
-
-
- <h2> Absolute URL</h2>
- <p>
-    <a href="https://www.google.com" > GOOGLE </a>
- </p>
-
-
- <h2> Relative URL</h2>
-
-<p>
-
-    <a href="second.html"> Go to second page </a>
-
-
-</p>
-
-<img src="man.png" style="width: 42px; height: 50px;">
-
-
-
-<a href="mailto:example@gmail.com"> send email </a>
-
-<br>
-
-
-
-<button onclick="document.location ='default.asp'"> Click Here</button>
-
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Blue_Flower_Transparent_Background.png" style="width: 150px; height: 150px;">
-
-
- -->
-
-<!-- 
- <h2> Basic Table </h2>
-
- <table style="width: 100%;">
-    <tr>
-        <th> Faculty</th>
-        <th> Contact</th>
-        <th colspan="2"> Country And phone</th>
-    </tr>
-
-    <tr>
-        <td>MTI</td>
-        <td>mti@gmail.com </td>
-        <td>Egypt</td>
-        <td> 0111111111 </td>
-    </tr>
-
-
-    <tr>
-        <td>MTI</td>
-        <td>mti@gmail.com </td>
-        <td>Egypt</td>
-        <td> 0111111111 </td>
-    </tr>
-
-     <tr>
-        <td>MTI</td>
-        <td>mti@gmail.com </td>
-        <td>Egypt</td>
-        <td> 0111111111 </td>
-    </tr>
-
-
-     <tr>
-        <td>MTI</td>
-        <td>mti@gmail.com </td>
-        <td>Egypt</td>
-        <td> 0111111111 </td>
-    </tr>
-
-
-     <tr>
-        <td>MTI</td>
-        <td>mti@gmail.com </td>
-        <td>Egypt</td>
-        <td> 0111111111 </td>
-    </tr>
-   
-
-
- </table>
- 
-
-
- <table>
-    <tr>
-        <th>Name</th>
-        <td> jone </td>
-
-    </tr>
-
-    <tr>
-        <th rowspan="2">phone</th>
-        <td> 111111 </td>
-        
-    </tr>
-
-    <tr>
-       
-        <td> 222222 </td>
-        
-    </tr>
- </table> -->
-
-
- <h2> An unordered list</h2>
-
- <ul>
-    <li> Coffee </li>
-    <li> Milk </li>
-    <li> Tea </li>  
- </ul>
-
-
-  <h2> An ordered list</h2>
-
- <ol>
-    <li> Coffee </li>
-    <li> Milk </li>
-    <li> Tea </li>  
- </ol>
-
-<p> AAAAAAAAAAAAAAAAAAA  <span > **Hello** </span> ddddddddddddd</p>
-
-
-<div style="background-color: black; color: white; padding: 20px;">
-
-    <h2> Cairo </h2>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad id minus ut incidunt, dolor obcaecati repudiandae? Vitae, eaque, cumque repellat expedita dolore cum explicabo accusantium, aperiam perferendis pariatur voluptate odit?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, saepe nihil? Aliquid, impedit magnam a labore eius sunt corrupti ad at ut tenetur nulla autem nesciunt repudiandae nam ullam distinctio.</p>
-</div>
-
-
-  <h1 style="background-color: blue;">HTML Tutorial</h1>
-    <h2 style="font-family: Verdana;">HTML is easy to learn!</h2>
-    <h3>HTML stands for Hyper Text Markup Language</h3>
-    <h4 style="font-size: 300%;">HTML is the standard markup language for creating Web pages</h4>
-    <h5 style="text-align: center;">HTML describes the structure of a Web page</h5>
-    <h6>HTML consists of a series of elements</h6>
-
-    <b>HTML consists of a series of elements </b>
-
-    <p style="color: chartreuse;">this text is important</p>
-
-    <p> <i> this text is italic </i> </p>
-
-    <p>    <strong> this text is important </strong> </p>
-
-
-    <p> this is some normal </p>
-    <p> <small> this some smaller text</small></p>
-
-
-      <p>Do not forget to buy <mark>milk</mark>  </p>
-
-      <p> My Fav color is <del>blue</del>  red</p>
-
-
-
-    <p style="color: brown;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime adipisci cumque, voluptatem minus hic nobis ab eaque fuga laboriosam expedita quisquam neque maiores iste amet nemo repellendus consequuntur assumenda magni!</p>
-
-    <a href="https://www.google.com"> This is link </a>
-
-    <img src="man.png" alt="man" width="100" height="140">
-
-
-
-
-
+<body>
+  <header id="main-header">
+    <h1>🌐 HTML Practice Project</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#media">Media</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About This Project</h2>
+      <p>This project is a <b>practice website</b> that combines <i>all HTML basics</i> and advanced features taught in <u>Day 1 and Day 2</u>.</p>
+      <p>Example of colors: <span style="color:red;">Red</span>, <span style="color:green;">Green</span>, <span style="color:blue;">Blue</span>.</p>
+      <p>Special symbols: &copy; &euro; &hearts; 😀 🚀 ❤️</p>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+      <h2>Media Examples</h2>
+      <h3>Image</h3>
+      <img src="day 1/man.png" alt="Sample" class="responsive">
+
+      <h3>Video (YouTube Iframe)</h3>
+      <iframe 
+  width="400" 
+  height="250" 
+  src="https://www.youtube.com/embed/_vZOEQCYSaY" 
+  title="YouTube Video" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+      <h3>Google Maps (Iframe)</h3>
+      <iframe width="400" height="250" src="https://maps.google.com/maps?q=cairo&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+      <h2>Our Team</h2>
+      <div class="card">
+        <h3 class="team-name">John Doe</h3>
+        <p>Web Developer</p>
+      </div>
+      <div class="card">
+        <h3 class="team-name">Jane Smith</h3>
+        <p>UI/UX Designer</p>
+      </div>
+    </section>
+
+    <!-- Table & List -->
+    <section>
+      <h2>Table & List Examples</h2>
+      <table>
+        <tr><th>Language</th><th>Level</th></tr>
+        <tr><td>HTML</td><td>Beginner</td></tr>
+        <tr><td>CSS</td><td>Intermediate</td></tr>
+      </table>
+
+      <h3>Shopping List</h3>
+      <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Cheese</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript Example -->
+    <section>
+      <h2>JavaScript Example</h2>
+      <button onclick="showMessage()">Click Me</button>
+    </section>
+
+    <!-- Code & Entities -->
+    <section>
+      <h2>Computer Code & Entities</h2>
+      <pre>
+function hello() {
+  console.log("Hello World!");
+}
+      </pre>
+      <p>Keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+      <p>URL Encode: Space = %20, © = %C2%A9</p>
+    </section>
+
+    <!-- XHTML Comment -->
+    <section>
+      <h2>HTML vs XHTML</h2>
+      <!--
+        XHTML requires:
+        - lowercase tags
+        - attributes must be quoted
+        - empty elements must be closed <br />
+      -->
+      <p>This page uses HTML5 but XHTML requires stricter rules.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ in 2025 | &copy; All Rights Reserved</p>
+  </footer>
 </body>
 </html>
